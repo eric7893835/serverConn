@@ -1,0 +1,266 @@
+
+.sprite {
+  background-image: url('../images/sprite.png');
+}
+
+.sprite-checked-icon {
+  background-position: -0px -0px;
+  width: 22px;
+  height: 22px;
+}
+.sprite-windows-icon {
+  background-position: -0px -22px;
+  width: 22px;
+  height: 22px;
+}
+.sprite-grayHost-sm {
+  background-position: -0px -44px;
+  width: 29px;
+  height: 28px;
+}
+.sprite-greenHost-sm {
+  background-position: -0px -72px;
+  width: 29px;
+  height: 28px;
+}
+.sprite-orangeHost-sm {
+  background-position: -0px -100px;
+  width: 29px;
+  height: 28px;
+}
+
+.sprite-licence {
+  background-position: -0px -128px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-sync {
+  background-position: -0px -160px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-edit {
+  background-position: -0px -192px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-exe {
+  background-position: -0px -224px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-set {
+  background-position: -0px -256px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-add {
+  background-position: -0px -288px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-username {
+  background-position: -0px -320px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-del {
+  background-position: -0px -352px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-port {
+  background-position: -0px -384px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-upload {
+  background-position: -0px -416px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-modal-icon {
+  background-position: -0px -448px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-warn {
+  background-position: -0px -480px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-identity {
+  background-position: -0px -512px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-info {
+  background-position: -0px -544px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-ip-set {
+  background-position: -0px -576px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-licence-file {
+  background-position: -0px -608px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-licence-icon {
+  background-position: -0px -640px;
+  width: 32px;
+  height: 32px;
+}
+.sprite-cycle {
+  background-position: -0px -672px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-time {
+  background-position: -0px -704px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-sys-up {
+  background-position: -0px -736px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-lock {
+  background-position: -0px -768px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-user-sm {
+  background-position: -0px -800px;
+  width: 32px;
+  height: 32px;
+}
+
+.sprite-handle {
+  background-position: -0px -832px;
+  width: 38px;
+  height: 38px;
+}
+
+.sprite-user-more {
+  background-position: -0px -870px;
+  width: 38px;
+  height: 38px;
+}
+.sprite-dot-green {
+  background-position: -0px -908px;
+  width: 40px;
+  height: 40px;
+}
+.sprite-dot-orange {
+  background-position: -0px -948px;
+  width: 42px;
+  height: 40px;
+}
+.sprite-grayHost {
+  background-position: -0px -988px;
+  width: 43px;
+  height: 41px;
+}
+.sprite-orangeHost {
+  background-position: -0px -1029px;
+  width: 43px;
+  height: 41px;
+}
+.sprite-greenHost {
+  background-position: -0px -1070px;
+  width: 43px;
+  height: 41px;
+}
+.sprite-pc-icon {
+  background-position: -0px -1111px;
+  width: 43px;
+  height: 43px;
+}
+.sprite-download-btn-sm {
+  background-position: -0px -1154px;
+  width: 132px;
+  height: 45px;
+}
+.sprite-orangeHost-warn {
+  background-position: -0px -1199px;
+  width: 54px;
+  height: 52px;
+}
+.sprite-greenHost-warn {
+  background-position: -0px -1251px;
+  width: 54px;
+  height: 56px;
+}
+.sprite-logo {
+  background-position: -0px -1307px;
+  width: 162px;
+  height: 59px;
+}
+.sprite-gateway {
+  background-position: -0px -1366px;
+  width: 65px;
+  height: 61px;
+}
+.sprite-host-danger {
+  background-position: -0px -1427px;
+  width: 65px;
+  height: 66px;
+}
+.sprite-modal-img {
+  background-position: -0px -1493px;
+  width: 75px;
+  height: 76px;
+}
+.sprite-download-btn-lg {
+  background-position: -0px -1569px;
+  width: 264px;
+  height: 84px;
+}
+.sprite-round {
+  background-position: -0px -1653px;
+  width: 113px;
+  height: 113px;
+}
+.sprite-light {
+  background-position: -0px -1766px;
+  width: 113px;
+  height: 114px;
+}
+.sprite-login-logo {
+  background-position: -0px -1880px;
+  width: 164px;
+  height: 154px;
+}
+.sprite-linux-icon {
+  background-position: -0px -2034px;
+  width: 288px;
+  height: 181px;
+}
+.sprite-windows-load {
+  background-position: -0px -2215px;
+  width: 187px;
+  height: 208px;
+}
+.sprite-ring {
+  background-position: -0px -2423px;
+  width: 297px;
+  height: 296px;
+}

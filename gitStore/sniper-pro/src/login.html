@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="lib/layer/skin/layer.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div id="login-box" class="clearfix">
+    <form id="loginform" action="">
+        <div class="login-input">
+            <img class="logo" src="images/login-logo.png" alt="logo">
+            <div class="form-group clearfix">
+                <label class="label" for="username">用户名</label>
+                <input id="username" name="username" type="text" autocomplete="off">
+            </div>
+            <div class="form-group clearfix">
+                <label class="label" for="psw">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
+                <input id="psw" name="password" type="password" autocomplete="off">
+            </div>
+            <div class="form-group code-box clearfix">
+                <label class="label" for="code">验证码</label>
+                <input id="code" name="code" type="text" autocomplete="off">
+                <img class="code-img" src="images/code.png" alt="验证码">
+                <a class="change-btn" href="javascript:void(0);">换一张</a>
+            </div>
+            <div id="download-btn">
+                <i class="iconfont">&#xe610;</i>
+                <a href="download.html">
+                    点击下载
+                </a>
+            </div>
+        </div>
+        <button class="login-btn-box" type="submit">
+        </button>
+    </form>
+</div>
+<div id="copy">Copyright © 2016 Sniper.All Rights Reserved.  上海高重信息科技有限公司 版权所有</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
+</html>

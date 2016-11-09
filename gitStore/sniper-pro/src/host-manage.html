@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>主机管理</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/host-manage.css">
+</head>
+<body>
+<header id="header" class="clearfix">
+    <a href="#" class="logo pull-left"></a>
+    <div class="user-center pull-right">
+        <a class="user-btn" href="javascript:void(0);">
+            <i class="icon-man iconfont">&#xe61a;</i>
+            <span>安全管理员</span>
+            <i class="icon-arrow iconfont">&#xe62d;</i>
+        </a>
+    </div>
+    <div class="time-box pull-right clearfix">
+        <i class="icon-time iconfont">&#xe613;</i>
+        <span id="current-time"></span>
+    </div>
+</header>
+<div class="main-wrap">
+    <aside id="nav-side" class="pull-left open">
+        <ul class="nav-side-list">
+            <li>
+                <a href="index.html" class="clearfix">
+                    <i class="iconfont pull-left">&#xe621;</i>
+                    <span class="pull-left">总览</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="host-manage.html" class="clearfix">
+                    <i class="iconfont pull-left">&#xe61f;</i>
+                    <span class="pull-left">主机管理</span>
+                </a>
+            </li>
+            <li>
+                <a class="summary clearfix" href="javascript:void(0);">
+                    <i class="iconfont arrow-icon pull-left">&#xe62b;</i>
+                    <span class="pull-left">智能分析</span>
+                </a>
+                <ul class="nav-side-sec">
+                    <li>
+                        <a href="#" class="clearfix">
+                            <i class="iconfont pull-left">&#xe60c;</i>
+                            <span class="pull-left">动作追踪</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="clearfix">
+                            <i class="iconfont pull-left">&#xe617;</i>
+                            <span class="pull-left">现场还原</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="summary clearfix" href="javascript:void(0);">
+                    <i class="iconfont arrow-icon pull-left">&#xe62b;</i>
+                    <span class="pull-left">用户管理</span>
+                </a>
+                <ul class="nav-side-sec">
+                    <li>
+                        <a href="#" class="clearfix">
+                            <i class="iconfont pull-left">&#xe611;</i>
+                            <span class="pull-left">分管人员</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="clearfix">
+                            <i class="iconfont pull-left">&#xe609;</i>
+                            <span class="pull-left">分管片区</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a class="summary clearfix" href="javascript:void(0);">
+                    <i class="iconfont arrow-icon pull-left">&#xe62b;</i>
+                    <span class="pull-left">系统设置</span>
+                </a>
+                <ul class="nav-side-sec">
+                    <li>
+                        <a href="#" class="clearfix">
+                            <i class="iconfont pull-left">&#xe607;</i>
+                            <span class="pull-left">安全警报规则</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="clearfix">
+                            <i class="iconfont pull-left">&#xe61d;</i>
+                            <span class="pull-left">杂项设置</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <a class="toggle-nav-btn" href="javascript:void(0);">
+            <i class="iconfont">&#xe62f;</i>
+        </a>
+    </aside>
+    <aside id="group-box" class="pull-left">
+        <div class="search-box">
+            <input type="text" placeholder="search">
+            <button>
+                <i class="iconfont">&#xe618;</i>
+            </button>
+        </div>
+        <div class="filter-box">
+            <a class="filter-btn filter-btn-danger" href="javascript:void(0);">
+                可疑
+                <span class="num">15</span>
+            </a>
+            <a class="filter-btn filter-btn-safe" href="javascript:void(0);">
+                安全
+                <span class="num">59</span>
+            </a>
+            <a class="filter-btn filter-btn-outline" href="javascript:void(0);">
+                离线
+                <span class="num">28</span>
+            </a>
+        </div>
+        <ul class="group-list">
+            <li class="open">
+                <a href="javascript:void(0);">
+                    <i class="iconfont">&#xe600;</i>
+                    <span>总公司</span>
+                </a>
+                <ul class="host-list">
+                    <li class="active">
+                        <a href="">
+                            <i class="sprite"></i>
+                            <div class="host-info">
+                                <span class="host-name">win-5VSOFOOJA</span>
+                                <span class="host-ip">192.168.31.232</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="sprite"></i>
+                            <div class="host-info">
+                                <span class="host-name">win-5VSOFOOJA</span>
+                                <span class="host-ip">192.168.31.232</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <i class="iconfont">&#xe600;</i>
+                    <span>沈阳分公司</span>
+                </a>
+                <ul class="host-list hide">
+                    <li>
+                        <a href="">
+                            <i class="sprite"></i>
+                            <div class="host-info">
+                                <span class="host-name">win-5VSOFOOJA</span>
+                                <span class="host-ip">192.168.31.232</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="sprite"></i>
+                            <div class="host-info">
+                                <span class="host-name">win-5VSOFOOJA</span>
+                                <span class="host-ip">192.168.31.232</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+    <section id="main-box" class="pull-left">
+        <ul id="nav-details" class="clearfix">
+            <li class="active">
+                <i class="iconfont pull-left">&#xe61e;</i>
+                <span class="pull-left">主机详情</span>
+            </li>
+            <li>
+                <i class="iconfont pull-left">&#xe612;</i>
+                <span class="pull-left">日志详情</span>
+            </li>
+            <li>
+                <i class="iconfont pull-left">&#xe60e;</i>
+                <span class="pull-left">策略设置</span>
+            </li>
+        </ul>
+        <iframe class="iframe-content" src="host-details.html" frameborder="0"></iframe>
+        <iframe class="iframe-content" src="log-details.html" frameborder="0"></iframe>
+        <iframe class="iframe-content" src="strategy.html" frameborder="0"></iframe>
+    </section>
+</div>
+</body>
+<!--[if lt IE 9]>
+<script src="lib/html5shiv.min.js"></script>
+<script src="lib/respond.min.js"></script>
+<![endif]-->
+
+<script src="js/common.js"></script>
+<script src="js/host-manage.js"></script>
+</html>

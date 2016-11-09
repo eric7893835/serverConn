@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="pie-canvas" style="height: 200px;width: 300px;"></div>
+    <script src="lib/echarts.min.js"></script>
+    <script>
+        //配置路径，加载指定路径
+        require.config({
+            paths: {
+                echarts: 'lib'
+            }
+        });
+        //给指定div制作成样式
+        require(
+                [
+                    'echarts',
+                    'echarts/chart/pie', //饼图所需要的js样式
+                    'echarts/chart/funnel' //如需饼漏斗图动态类型切换，require时还需要echarts/chart/funnel
+                ],
+                function(ec) {
+                    // 基于准备好的dom，初始化echarts图表
+                    var myChart = ec.init(document.getElementById('pie-canvas'));
+
+
+                    //从网上复制下来的属性
+                    var option = {
+                        tooltip: {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b}: {c} ({d}%)"
+                        },
+                        legend: {
+                            orient: 'vertical',
+                            x: 'left',
+                            data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+                        },
+                        series: [{
+                            name: '访问来源',
+                            type: 'pie',
+                            radius: ['50%', '70%'],
+                            avoidLabelOverlap: false,
+                            label: {
+                                normal: {
+                                    show: false,
+                                    position: 'center'
+                                },
+                                emphasis: {
+                                    show: true,
+                                    textStyle: {
+                                        fontSize: '30',
+                                        fontWeight: 'bold'
+                                    }
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    show: false
+                                }
+                            },
+                            data: [{
+                                value: 335,
+                                name: '直接访问'
+                            }, {
+                                value: 310,
+                                name: '邮件营销'
+                            }, {
+                                value: 234,
+                                name: '联盟广告'
+                            }, {
+                                value: 135,
+                                name: '视频广告'
+                            }, {
+                                value: 1548,
+                                name: '搜索引擎'
+                            }]
+                        }]
+                    };
+
+                    //加载饼型
+                    myChart.setOption(option);
+                }
+        );
+    </script>
+</body>
+</html>
